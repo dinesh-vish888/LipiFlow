@@ -1,0 +1,149 @@
+.footer {
+  background: var(--color-text);
+  color: #c9cede;
+  padding: 56px 24px 28px;
+  margin-top: auto;
+}
+
+[data-theme="dark"] .footer {
+  background: #0d0d1a;
+  color: #9ca3c8;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer__logo-icon {
+  font-size: 1.5rem;
+}
+
+.footer__logo-name span {
+  color: var(--color-secondary);
+}
+
+.footer__tagline {
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.footer__about-desc {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #9ca3c8;
+  max-width: 320px;
+}
+
+.footer__col-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__links li a {
+  color: #9ca3c8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.18s;
+}
+
+.footer__links li a:hover {
+  color: var(--color-primary);
+}
+
+.footer__font-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__font-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #9ca3c8;
+}
+
+.footer__font-badge {
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer__divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 24px;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #6b7280;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer__copy {
+  color: #6b7280;
+}
+
+.footer__made {
+  color: #9ca3c8;
+}
+
+@media (max-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
