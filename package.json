@@ -1,0 +1,18 @@
+{
+  "name": "lipiflow",
+  "version": "1.0.0",
+  "description": "LipiFlow - Hindi Font Converter",
+  "private": true,
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "build": "cd backend && npm install",
+    "server": "node backend/src/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "node backend/src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
